@@ -19,16 +19,9 @@ body {
     transition: .1s all;
     scroll-behavior: smooth;
     background-size: cover;
+    background-color: #eee;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-video {
-    position: fixed;
-    z-index: -1;
-    width: 100dvw;
-    height: 100dvh;
-    object-fit: cover;
 }
 
 header {
