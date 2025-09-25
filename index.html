@@ -13,7 +13,8 @@
     <header>
         <nav>
             <a class="navButton active" href="#home"><i class="material-icons">home</i><span>Home</span></a>
-            <a class="navButton" href="#about"><i class="material-icons">work</i><span>Sobre</span></a>
+            <a class="navButton" href="#about"><i class="material-icons">person</i><span>Sobre</span></a>
+            <a class="navButton" href="#skills"><i class="material-icons">list</i><span>Skills</span></a>
         </nav>
     </header>
     <div class="container" id="home">
@@ -22,11 +23,11 @@
             <h1>Olá! Sou o <span>Breno Lobão</span>, bem vindo ao meu Portifólio!</h1>
             <h2>Espero que goste de saber um pouco mais sobre mim!</h2>
             <div class="contacts">
-                <a href=""><img src="contacts-icons/github.png" alt=""></a>
-                <a href=""><img src="contacts-icons/instagram.png" alt=""></a>
-                <a href=""><img src="contacts-icons/linkedin.png" alt=""></a>
-                <a href=""><img src="contacts-icons/o-email.png" alt=""></a>
-                <a href=""><img src="contacts-icons/whatsapp.png" alt=""></a>
+                <a href=""><img src="assets/contacts-icons/github.png" alt=""></a>
+                <a href=""><img src="assets/contacts-icons/instagram.png" alt=""></a>
+                <a href=""><img src="assets/contacts-icons/linkedin.png" alt=""></a>
+                <a href=""><img src="assets/contacts-icons/o-email.png" alt=""></a>
+                <a href=""><img src="assets/contacts-icons/whatsapp.png" alt=""></a>
             </div>
             <a title="Baixar Curriculo" id="resumeView" href=""><i class="material-icons">attach_file</i></a>
         </div>
@@ -90,6 +91,81 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container" id="skills">
+        <div class="itens-wrapper">
+            <section class="hard inner-section">
+                <h3 class="section-title" id="hard-skills-title"><i class="material-icons">settings
+                    </i>Hard</h3>
+                <div class="cards-wrapper">
+                    <div class="hard-card">
+                        <h4>HTML</h4>
+                        <img src="assets/hard-skill-icons/html-5.png" alt="">
+                        <progress id="html" value="70" max="100" title="70%"></progress>
+                    </div>
+
+                    <div class="hard-card">
+                        <h4>CSS</h4>
+                        <img src="assets/hard-skill-icons/css-3.png" alt="">
+                        <progress id="css" value="85" max="100" title="85%"></progress>
+                    </div>
+
+                    <div class="hard-card">
+                        <h4>Javascript</h4>
+                        <img src="assets/hard-skill-icons/js.png" alt="">
+                        <progress id="javascript" value="40" max="100" title="40%"></progress>
+                    </div>
+
+                    <div class="hard-card">
+                        <h4>React.js</h4>
+                        <img src="assets/hard-skill-icons/biblioteca.png" alt="">
+                        <progress id="react" value="30" max="100" title="30%"></progress>
+                    </div>
+
+                    <div class="hard-card">
+                        <h4>Vue.js</h4>
+                        <img src="assets/hard-skill-icons/vue.webp" alt="">
+                        <progress id="vue" value="20" max="100" title="20%"></progress>
+                    </div>
+
+                    <div class="hard-card">
+                        <h4>Next.js</h4>
+                        <img src="assets/hard-skill-icons/next.png" alt="">
+                        <progress id="next" value="20" max="100" title="20%"></progress>
+                    </div>
+
+                    <div class="hard-card">
+                        <h4>Java</h4>
+                        <img src="assets/hard-skill-icons/java.png" alt="">
+                        <progress id="java" value="10" max="100" title="10%"></progress>
+                    </div>
+
+                    <div class="hard-card">
+                        <h4>SQL</h4>
+                        <img src="assets/hard-skill-icons/servidor-sql.png" alt="">
+                        <progress id="sql" value="15" max="100" title="15%"></progress>
+                    </div>
+                </div>
+            </section>
+            <section class="soft inner-section">
+                <h3 class="section-title" id="soft-skills-title"><i class="material-icons">lightbulb_outline
+                    </i>Soft</h3>
+                <div class="cards-wrapper" id="soft-skills-cards">
+                    <div class="soft-card">Raciocínio lógico <img src="assets/soft-skill-icon/raciocinio.png" alt="">
+                    </div>
+                    <div class="soft-card">Organização <img src="assets/soft-skill-icon/lista-de-controle.png" alt="">
+                    </div>
+                    <div class="soft-card">Leitura e análise <img src="assets/soft-skill-icon/analise-de-dados.png"
+                            alt=""></div>
+                    <div class="soft-card">Curiosidade <img src="assets/soft-skill-icon/inquerito.png" alt=""></div>
+                    <div class="soft-card">Criatividade <img src="assets/soft-skill-icon/criatividade.png" alt=""></div>
+                    <div class="soft-card">Scrum <img src="assets/soft-skill-icon/scrum.png" alt="">
+                    </div>
+                    <div class="soft-card">Kanban <img src="assets/soft-skill-icon/quadro-kanban.png" alt="">
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <script>

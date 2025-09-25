@@ -6,6 +6,7 @@
     overflow: hidden;
     box-sizing: border-box;
     font-family: Roboto;
+    /*border: 1px solid black;*/
 }
 
 :root {
@@ -113,6 +114,7 @@ header nav a:hover {
     padding: var(--white-space);
     border: 1px solid lightgrey;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -169,7 +171,8 @@ h1 span {
     border: none;
 }
 
-#about .itens-wrapper {
+#about .itens-wrapper,
+#skills .itens-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -178,7 +181,8 @@ h1 span {
     gap: var(--white-space);
 }
 
-#about .itens-wrapper .inner-section {
+#about .itens-wrapper .inner-section,
+#skills .itens-wrapper .inner-section {
     height: 100%;
     padding: var(--white-space);
 }
@@ -214,8 +218,15 @@ h1 span {
     border: 1px solid lightgrey;
 }
 
-.experience {
+.experience,
+.hard {
     width: 60%;
+}
+
+.obj,
+.soft {
+    width: 40%;
+    border-left: 1px solid lightgrey;
 }
 
 .experience .cards-wrapper .card p {
@@ -230,10 +241,6 @@ h1 span {
     color: #444;
 }
 
-.obj {
-    width: 40%;
-    border-left: 1px solid lightgrey;
-}
 
 .obj .cards-wrapper .card {
     border: none;
@@ -251,4 +258,55 @@ h1 span {
 
 #resumeView i {
     font-size: 2em;
+}
+
+.hard .cards-wrapper {
+    align-items: center;
+}
+
+.hard-card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.hard-card {
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: var(--white-space);
+    gap: var(--white-space);
+    height: 150px;
+    border: 1px solid lightgray;
+    border-radius: var(--white-space);
+}
+
+.hard-card progress {
+    width: 100%;
+    padding: var(--white-space);
+}
+
+.hard-card h4 {
+    padding: 5px;
+}
+
+.soft-card img {
+    width: 25px;
+    object-fit: contain;
+}
+
+.soft-card {
+    width: 100%;
+    padding: var(--white-space);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--white-space);
+    border: 1px solid lightgrey;
+}
+
+.hard .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
 }
