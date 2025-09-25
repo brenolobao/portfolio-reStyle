@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="navButton active" href="#home"><i class="material-icons">home</i><span>Home</span></a>
+            <a class="navButton" href="#about"><i class="material-icons">work</i><span>Sobre</span></a>
+        </nav>
+    </header>
+    <div class="container" id="home">
+        <div class="itens-wrapper">
+            <img src="profile-pic.png" alt="profile image">
+            <h1>Olá! Sou o <span>Breno Lobão</span>, bem vindo ao meu Portifólio!</h1>
+            <h2>Espero que goste de saber um pouco mais sobre mim!</h2>
+            <div class="contacts">
+                <a href=""><img src="contacts-icons/github.png" alt=""></a>
+                <a href=""><img src="contacts-icons/instagram.png" alt=""></a>
+                <a href=""><img src="contacts-icons/linkedin.png" alt=""></a>
+                <a href=""><img src="contacts-icons/o-email.png" alt=""></a>
+                <a href=""><img src="contacts-icons/whatsapp.png" alt=""></a>
+            </div>
+            <a title="Baixar Curriculo" id="resumeView" href=""><i class="material-icons">attach_file</i></a>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <div class="itens-wrapper">
+            <div class="experience inner-section">
+                <h3 class="section-title" id="experience-title"><i class="material-icons">work</i>Experiências e
+                    Formação</h3>
+                <div class="cards-wrapper" id="experience-cards">
+                    <div class="card">
+                        <h3>Starke Brasil Dev</h3>
+                        <h4>Desenvolvedor front-end junior</h4>
+                        <ul>
+                            <li>Criação de uma landing page completa usando Next.js</li>
+                            <li>Criação de componentes usando React.js, Html, Css e Javascript</li>
+                        </ul>
+                        <p>abr de 2021 - dez de 2021 - 9 meses</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Starke Brasil Dev</h3>
+                        <h4>Estagiário</h4>
+                        <ul>
+                            <li>Criação de componentes web usando Html, Css e Javascript</li>
+                            <li>Refatoração de codigo</li>
+                        </ul>
+                        <p>fev de 2021 - abr de 2021 - 3 meses</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Uniasselvi</h3>
+                        <h4>Analise e desenvolvimento de sistemas - ADS</h4>
+                        <p>2021 - 2024 - 6 semestres</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="obj inner-section">
+                <h3 class="section-title" id="objective-title"><i class="material-icons">person</i>Sobre</h3>
+                <div class="cards-wrapper">
+                    <div class="card" id="objective-content">
+                        Desenvolvedor Front-end Júnior, interessado em software, hardware e design, buscando transformar
+                        ideias em realidade por meio do desenvolvimento.
+                        <br><br>
+                        Tenho experiência prática com HTML, CSS e JavaScript, além de já ter trabalhado com React.js,
+                        Next.js, Vue.js e Bootstrap. Também possuo conhecimentos em Java e SQL, o que amplia minha visão
+                        sobre lógica de programação e desenvolvimento orientado a objetos.
+                        <br><br>
+                        Já atuei como desenvolvedor júnior na Starke Brasil Dev, onde participei da criação de uma
+                        landing page completa em Next.js e desenvolvi componentes reutilizáveis com React.js, além de
+                        experiências anteriores como estagiário na área.
+                        <br><br>
+                        Sou graduado em Análise e Desenvolvimento de Sistemas (UNIASSELVI). Meu objetivo é aplicar meus
+                        conhecimentos em projetos reais, colaborar com profissionais experientes e evoluir cada vez mais
+                        como desenvolvedor.
+                        <br><br>
+                        Gosto de ver as coisas funcionando, de resolver problemas com lógica e de contribuir com equipes
+                        que valorizam inovação e objetividade.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const links = document.querySelectorAll(".navButton");
+
+        links.forEach(link => {
+            link.addEventListener("click", function () {
+                links.forEach(l => l.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
