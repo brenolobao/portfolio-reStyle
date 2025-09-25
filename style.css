@@ -25,6 +25,30 @@ body {
     overflow-y: auto;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-scrollbar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 8px;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.custom-scrollbar .thumb {
+    width: 100%;
+    background: #1f3f87;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+}
+
 header {
     position: fixed;
     z-index: 3;

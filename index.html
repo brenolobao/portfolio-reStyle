@@ -10,11 +10,15 @@
 </head>
 
 <body>
+    <div class="custom-scrollbar">
+        <div class="thumb"></div>
+    </div>
     <header>
         <nav>
             <a class="navButton active" href="#home"><i class="material-icons">home</i><span>Home</span></a>
             <a class="navButton" href="#about"><i class="material-icons">person</i><span>Sobre</span></a>
             <a class="navButton" href="#skills"><i class="material-icons">list</i><span>Skills</span></a>
+            <a class="navButton" href="#projects"><i class="material-icons">work</i><span>Projetos</span></a>
         </nav>
     </header>
     <div class="container" id="home">
@@ -169,6 +173,9 @@
             </section>
         </div>
     </div>
+    <div class="container" id="projects">
+        <div class="itens-wrapper"></div>
+    </div>
     <script>
         const links = document.querySelectorAll(".navButton");
 
@@ -178,6 +185,23 @@
                 this.classList.add("active");
             });
         });
+
+        const content = document.querySelector('body');
+        const track = document.querySelector('.custom-scrollbar');
+        const thumb = document.querySelector('.thumb');
+
+        function updateScrollbar() {
+            const ratio = content.scrollTop / (content.scrollHeight - content.clientHeight);
+            const thumbHeight = track.clientHeight * (content.clientHeight / content.scrollHeight);
+
+            thumb.style.height = thumbHeight + 'px';
+            thumb.style.transform = `translateY(${ratio * (track.clientHeight - thumbHeight)}px)`;
+        }
+
+        content.addEventListener('scroll', updateScrollbar);
+        window.addEventListener('resize', updateScrollbar);
+        updateScrollbar();
+
     </script>
 </body>
 
