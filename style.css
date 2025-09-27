@@ -22,7 +22,6 @@ body {
     background-color: #eee;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: auto;
 }
 
 body::-webkit-scrollbar {
