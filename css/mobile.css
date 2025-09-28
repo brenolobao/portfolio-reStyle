@@ -68,7 +68,7 @@
     }
 
     body {
-        overflow-y: none !important;
+        overflow-y: inherit !important;
     }
 
 }
