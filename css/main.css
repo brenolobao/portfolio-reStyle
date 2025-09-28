@@ -91,8 +91,8 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #1f3f87;
-    transform: scale(1.05);
+    color: white;
+    background-color: #1f3f87;
 }
 
 .navButton:hover>span {
@@ -131,7 +131,8 @@ header nav a:hover {
 }
 
 .active {
-    color: #1f3f87;
+    color: white;
+    background-color: #1f3f87;
 }
 
 .itens-wrapper {

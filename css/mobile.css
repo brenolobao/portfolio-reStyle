@@ -32,6 +32,10 @@
         display: flex;
     }
 
+    #resumeView span {
+        display: none;
+    }
+
     .container {
         display: flex;
         align-items: flex-start;
