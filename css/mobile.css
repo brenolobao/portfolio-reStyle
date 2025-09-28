@@ -1,0 +1,73 @@
+@media (max-width:480px) {
+    header {
+        width: 100%;
+        bottom: 0;
+        height: 10%;
+        padding: 0px;
+    }
+
+    header nav {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    header nav a span {
+        left: -10px !important;
+        display: none !important;
+    }
+
+    header nav a span:before {
+        display: none;
+    }
+
+    .itens-wrapper {
+        height: 90%;
+        width: 100%;
+    }
+
+    #home .itens-wrapper {
+        text-align: center;
+        display: flex;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow-y: none !important;
+        padding: 0px;
+    }
+
+    .experience,
+    .hard {
+        width: 100%;
+        height: max-content !important;
+    }
+
+    .obj,
+    .soft {
+        width: 100%;
+        border: none;
+        height: max-content !important;
+    }
+
+    #about .itens-wrapper,
+    #skills .itens-wrapper {
+        display: initial;
+        overflow-y: scroll !important;
+    }
+
+    .card {
+        height: max-content;
+    }
+
+    .custom-scrollbar {
+        display: none;
+    }
+
+    body {
+        overflow-y: none !important;
+    }
+
+}
