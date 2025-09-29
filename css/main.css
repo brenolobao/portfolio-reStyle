@@ -17,11 +17,7 @@ body {
     height: 100dvh;
     position: relative;
     transition: .1s all;
-    scroll-behavior: smooth;
-    background-size: cover;
     background-color: #eee;
-    background-position: center;
-    background-repeat: no-repeat;
     overflow-y: auto;
 }
 
