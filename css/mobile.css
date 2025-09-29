@@ -71,6 +71,29 @@
         height: max-content;
     }
 
+    .hard-card {
+        width: calc(50% - var(--white-space));
+    }
+
+    #projects-cards .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects-cards .card .desc {
+        width: 100%;
+    }
+
+    #projects-cards .card .stacks {
+        margin-top: var(--white-space);
+    }
+
+    #projects-cards .card .links {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
     .custom-scrollbar {
         display: none;
     }

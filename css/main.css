@@ -164,11 +164,15 @@ h1 span {
     object-fit: contain;
     margin-bottom: 1em;
     border-radius: 50%;
-    border: 2px dashed grey;
+    border: 2px dashed black;
 }
 
 #home .itens-wrapper h2 {
     font-weight: normal;
+}
+
+#home .itens-wrapper h1 {
+    font-size: 2.5em;
 }
 
 .contacts {
@@ -275,19 +279,17 @@ h1 span {
     display: flex;
     width: 100%;
     align-items: center;
-    gap: var(--gap-8);
 }
 
 .stacks span {
-    border: 1px solid var(--bgcolor);
     padding: 7px;
-    color: var(--bgcolor);
-    background-color: var(--primary-color);
+    color: #1f3f87;
+    background-color: White;
     font-size: 0.8em;
     border-radius: var(--white-space);
     display: flex;
     align-items: center;
-    gap: 7.5px;
+    gap: 5px;
     cursor: pointer;
 }
 
