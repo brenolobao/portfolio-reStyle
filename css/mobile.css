@@ -46,20 +46,23 @@
     }
 
     .experience,
-    .hard {
+    .hard,
+    .projects {
         width: 100%;
         height: max-content !important;
     }
 
     .obj,
-    .soft {
+    .soft,
+    .git {
         width: 100%;
         border: none;
         height: max-content !important;
     }
 
     #about .itens-wrapper,
-    #skills .itens-wrapper {
+    #skills .itens-wrapper,
+    #projects .itens-wrapper {
         display: initial;
         overflow-y: scroll !important;
     }

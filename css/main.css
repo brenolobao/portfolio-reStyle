@@ -198,7 +198,8 @@ h1 span {
 }
 
 #about .itens-wrapper,
-#skills .itens-wrapper {
+#skills .itens-wrapper,
+#projects .itens-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -207,8 +208,132 @@ h1 span {
     gap: var(--white-space);
 }
 
+.git-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--white-space);
+    padding: var(--white-space);
+    height: 90%;
+}
+
+.git-profile .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.git-profile img {
+    width: 35%;
+    border-radius: 50%;
+    padding: var(--white-space);
+    border: 2px dashed var(--text-color);
+    object-fit: contain;
+}
+
+.git-profile .cards-wrapper {
+    gap: none;
+}
+
+.git-profile .cards-wrapper .card {
+    width: 100%;
+    height: calc(100% / 5);
+}
+
+#projects-cards .card {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#projects-cards .card img {
+    width: 20%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#projects-cards .card .desc {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#projects-cards .card .desc h3 {
+    font-size: 1em;
+}
+
+#projects-cards .card .desc p {
+    font-size: 0.8em;
+    width: 100%;
+    text-align: justify;
+}
+
+.stacks {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: var(--gap-8);
+}
+
+.stacks span {
+    border: 1px solid var(--bgcolor);
+    padding: 7px;
+    color: var(--bgcolor);
+    background-color: var(--primary-color);
+    font-size: 0.8em;
+    border-radius: var(--white-space);
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+    cursor: pointer;
+}
+
+.stacks span img {
+    width: 15px;
+    object-fit: contain;
+}
+
+.links {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links a {
+    color: var(--text-color);
+}
+
+.links a i {
+    font-size: 1.5em;
+}
+
+
+.git-profile .cards-wrapper .card a {
+    width: 100%;
+    padding: var(--white-space);
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.git-profile .cards-wrapper .card a p {
+    font-size: .8em;
+    color: grey;
+}
+
+
 #about .itens-wrapper .inner-section,
-#skills .itens-wrapper .inner-section {
+#skills .itens-wrapper .inner-section,
+#projects .itens-wrapper .inner-section {
     height: 100%;
     padding: var(--white-space);
 }
@@ -244,13 +369,20 @@ h1 span {
     border: 1px solid lightgrey;
 }
 
+.projects .cards-wrapper .card img {
+    width: 75px;
+    object-fit: contain;
+}
+
 .experience,
-.hard {
+.hard,
+.projects {
     width: 60%;
 }
 
 .obj,
-.soft {
+.soft,
+.git {
     width: 40%;
     border-left: 1px solid lightgrey;
 }
