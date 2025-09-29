@@ -19,6 +19,7 @@ body {
     transition: .1s all;
     background-color: #eee;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
