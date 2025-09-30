@@ -78,6 +78,7 @@
 
     .hard-card {
         width: calc(50% - var(--white-space));
+        height: 160px;
     }
 
     #projects-cards .card {
