@@ -18,6 +18,16 @@ function updateScrollbar() {
     thumb.style.height = thumbHeight + 'px';
     thumb.style.transform = `translateY(${ratio * (track.clientHeight - thumbHeight)}px)`;
 }
+const video = document.getElementById("profile-video");
+
+setTimeout(() => {
+    video.style.display = "initial"
+    video.play();
+}, 2000);
+
+video.addEventListener("ended", () => {
+    video.style.display = "none";
+});
 
 content.addEventListener('scroll', updateScrollbar);
 window.addEventListener('resize', updateScrollbar);

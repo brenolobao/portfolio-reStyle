@@ -159,12 +159,29 @@ h1 span {
     overflow: visible;
 }
 
-#home .itens-wrapper img {
+#home .itens-wrapper .home-img {
     height: 250px;
+    width: 250px;
     object-fit: contain;
     margin-bottom: 1em;
     border-radius: 50%;
     border: 2px dashed black;
+    position: relative;
+}
+
+#home .itens-wrapper .home-img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#home .itens-wrapper .home-img video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: none;
 }
 
 #home .itens-wrapper h2 {
