@@ -20,7 +20,8 @@
         z-index: unset;
         left: unset;
         background-color: unset;
-        margin-top: 3px;
+        padding: 5px;
+        border-radius: unset;
     }
 
     .navButton {
@@ -30,6 +31,14 @@
         height: unset;
         border-radius: unset;
         padding: 5px;
+    }
+
+    .navButton i {
+        margin-bottom: 3px;
+    }
+
+    .navButton:nth-child(3) i {
+        margin-bottom: 3px;
     }
 
     .active {
