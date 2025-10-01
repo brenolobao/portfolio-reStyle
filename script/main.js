@@ -23,7 +23,7 @@ const video = document.getElementById("profile-video");
 setTimeout(() => {
     video.style.display = "initial"
     video.play();
-}, 2000);
+}, 1500);
 
 video.addEventListener("ended", () => {
     video.style.display = "none";
