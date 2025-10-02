@@ -163,6 +163,21 @@
         background-color: #eee;
     }
 
+    .links a {
+        color: var(--text-color);
+        width: 50%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        border-bottom: none;
+        border-right: 1px solid lightgray;
+        padding: 5px;
+    }
+
+    .links a:last-child {
+        border-right: none;
+    }
+
     #projects-cards .card .links i {
         margin-top: 2px;
     }

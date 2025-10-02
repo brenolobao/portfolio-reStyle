@@ -332,11 +332,20 @@ h1 span {
     align-items: center;
     justify-content: space-evenly;
     border-radius: var(--white-space);
-    background-color: #eee;
+    background-color: #eff1f3;
 }
 
 .links a {
     color: var(--text-color);
+    width: 100%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.links a:last-child {
+    border-bottom: none;
 }
 
 .links a i {
