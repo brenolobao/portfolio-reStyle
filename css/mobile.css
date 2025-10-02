@@ -139,6 +139,7 @@
         border-radius: 5px;
         font-size: .8em;
         display: initial;
+        text-align: center;
     }
 
     #projects-cards .card {
