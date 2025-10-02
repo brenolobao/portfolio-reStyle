@@ -1,4 +1,8 @@
 @media (max-width:480px) {
+    :root {
+        --white-space: 7.5px;
+    }
+
     header {
         width: 100%;
         bottom: 0;
@@ -118,6 +122,25 @@
         height: 160px;
     }
 
+    .hard-card progress {
+        width: 75%;
+    }
+
+    .hard-prog {
+        width: 100%;
+        padding: var(--white-space);
+        border: 1px solid lightgray;
+        border-radius: 5px;
+    }
+
+    .hard-prog span {
+        width: 25%;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        font-size: .8em;
+        display: initial;
+    }
+
     #projects-cards .card {
         flex-direction: column;
         align-items: center;
@@ -135,6 +158,12 @@
         flex-direction: row;
         align-items: center;
         width: 100%;
+        border-radius: var(--white-space);
+        background-color: #eee;
+    }
+
+    #projects-cards .card .links i {
+        margin-top: 2px;
     }
 
     .custom-scrollbar {
