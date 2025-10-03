@@ -367,12 +367,13 @@ h1 span {
 
 .git-profile .cards-wrapper .card a p {
     font-size: .8em;
-    color: grey;
+    color: #444;
     border: 1px solid lightgrey;
     padding: 5px;
     border-radius: 7px;
     width: 100px;
     text-align: center;
+    background-color: #eff1f3;
 }
 
 .git-profile .cards-wrapper .card a i {
@@ -438,11 +439,12 @@ h1 span {
 }
 
 .experience .cards-wrapper .card p {
-    color: grey;
+    color: #444;
     border: 1px solid lightgray;
     border-radius: var(--white-space);
     padding: 7.5px;
     width: max-content;
+    background-color: #eff1f3;
 }
 
 .experience .cards-wrapper .card {
