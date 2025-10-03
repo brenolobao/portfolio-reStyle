@@ -98,6 +98,11 @@
         background-color: white;
     }
 
+    .git .cards-wrapper {
+        padding: 0px;
+        margin-top: var(--white-space);
+    }
+
     .container {
         display: flex;
         align-items: flex-start;
@@ -153,9 +158,11 @@
         width: 25%;
         border: 1px solid lightgray;
         border-radius: 5px;
+        background-color: white;
         font-size: .8em;
         display: initial;
         text-align: center;
+        padding: 2px;
     }
 
     #projects-cards .card {
