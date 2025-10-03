@@ -20,15 +20,21 @@ function updateScrollbar() {
 }
 const video = document.getElementById("profile-video");
 
-setTimeout(() => {
-    video.style.display = "initial"
-    video.play();
-}, 1250);
+function playVideo() {
 
-video.addEventListener("ended", () => {
-    video.style.display = "none";
-});
+    setTimeout(() => {
+        video.style.display = "initial"
+        video.play();
+    }, 1250);
 
+    video.addEventListener("ended", () => {
+        video.style.display = "none";
+    });
+}
+document.getElementById('home-img').addEventListener("click", () => {
+    playVideo()
+})
 content.addEventListener('scroll', updateScrollbar);
 window.addEventListener('resize', updateScrollbar);
 updateScrollbar();
+playVideo();

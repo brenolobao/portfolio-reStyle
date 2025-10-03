@@ -23,7 +23,7 @@ body {
     height: 100dvh;
     position: relative;
     transition: .1s all;
-    background-color: #eee;
+    background-color: #eff1f3;
     overflow-y: auto;
     scroll-behavior: smooth;
 }
@@ -517,6 +517,10 @@ h1 span {
 .soft-card img {
     width: 25px;
     object-fit: contain;
+    background-color: #eff1f3;
+    border-radius: 50%;
+    padding: var(--white-space);
+    box-sizing: content-box;
 }
 
 .soft-card {
